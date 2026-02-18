@@ -24,12 +24,12 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.28333333
         value: -175.6
-        inSlope: 0
-        outSlope: 0
+        inSlope: 381.26013
+        outSlope: 381.26013
         tangentMode: 0
-        weightedMode: 0
+        weightedMode: 2
         inWeight: 0.33333334
-        outWeight: 0.33333334
+        outWeight: 0.46853954
       - serializedVersion: 3
         time: 0.6166667
         value: 68.99999
@@ -93,12 +93,12 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.28333333
         value: -175.6
-        inSlope: 0
-        outSlope: 0
+        inSlope: 381.26013
+        outSlope: 381.26013
         tangentMode: 0
-        weightedMode: 0
+        weightedMode: 2
         inWeight: 0.33333334
-        outWeight: 0.33333334
+        outWeight: 0.46853954
       - serializedVersion: 3
         time: 0.6166667
         value: 68.99999
