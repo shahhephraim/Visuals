@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hide
+  m_Name: 4-line pop (1)
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -22,22 +22,22 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: -288
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
+        time: 0.31666666
+        value: -169.9
+        inSlope: -0.20345561
+        outSlope: -0.20345561
+        tangentMode: 0
+        weightedMode: 3
         inWeight: 0.33333334
-        outWeight: 0.33333334
+        outWeight: 0.82149947
       - serializedVersion: 3
-        time: 0.41666666
-        value: -659.3
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
+        time: 0.6333333
+        value: 34.12
+        inSlope: 1665.9528
+        outSlope: 1665.9528
+        tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
+        inWeight: 0.046331443
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -70,7 +70,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.41666666
+    m_StopTime: 0.6333333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -91,22 +91,22 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: -288
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
+        time: 0.31666666
+        value: -169.9
+        inSlope: -0.20345561
+        outSlope: -0.20345561
+        tangentMode: 0
+        weightedMode: 3
         inWeight: 0.33333334
-        outWeight: 0.33333334
+        outWeight: 0.82149947
       - serializedVersion: 3
-        time: 0.41666666
-        value: -659.3
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
+        time: 0.6333333
+        value: 34.12
+        inSlope: 1665.9528
+        outSlope: 1665.9528
+        tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
+        inWeight: 0.046331443
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2

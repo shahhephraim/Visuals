@@ -5,22 +5,22 @@ using UnityEngine;
 public class MyAnimator : MonoBehaviour
 {
     [SerializeField]
+    private Animator _panel;
+    [SerializeField]
     private Animator[] _animators;
 
-
-    [ContextMenu("hIDE")]
     public void Hide()
     {
-        _animators[0].Play("Hide");
+        _panel.Play("Hide");
     }
 
-    [ContextMenu("pop")]
-    public void Pop()
+    public void Pop(int lines)
     {
-        
+        _panel.Play("Pop");
+
         foreach (var animator in _animators)
         {
-            animator.Play("Pop");
+            animator.Play($"{lines}-line pop");
         }
     }
 
@@ -34,7 +34,7 @@ public class MyAnimator : MonoBehaviour
 
                 if (text == "pop")
                 {
-                    Pop();
+                    Pop(4);
                 }
                 else if (text == "hide")
                 {
