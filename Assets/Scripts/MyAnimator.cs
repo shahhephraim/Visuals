@@ -34,7 +34,7 @@ public class MyAnimator : MonoBehaviour
 
                 if (text == "pop")
                 {
-                    Pop(3);
+                    Pop(1);
                 }
                 else if (text == "hide")
                 {
