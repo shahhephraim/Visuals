@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using TMPro;
 using UnityEngine;
@@ -8,21 +9,26 @@ public class NewTest : MonoBehaviour
     TextMeshProUGUI _text;
     [SerializeField]
     TextMeshProUGUI[] _content;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        Debug.Log(GetParent());
-    }
+    [SerializeField]
+    private MyAnimator _animator;
 
     private void Update()
     {
         string content, address;
+
+        
+
         using (var stream = new FileStream(GetParent() + "content.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite))
         {
             using (var reader = new StreamReader(stream))
             {
                 content = reader.ReadLine();
             }
+        }
+
+        if (_content[0].text == content)
+        {
+            return;
         }
 
         using (var stream = new FileStream(GetParent() + "address.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite))
@@ -33,6 +39,7 @@ public class NewTest : MonoBehaviour
             }
         }
 
+        
 
         _text.text = address;
 
@@ -40,6 +47,8 @@ public class NewTest : MonoBehaviour
         {
             text.text = content;
         }
+
+        _animator.UpdateLinePositions();
     }
 
 

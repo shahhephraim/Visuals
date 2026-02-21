@@ -34,7 +34,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 4-line pop 1
+  m_Name: 4-line
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -131,7 +131,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 3-line pop 1
+  m_Name: 3-line
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -222,7 +222,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 1-line pop END
+  m_Name: 1-line
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -248,7 +248,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 2-line pop END
+  m_Name: 2-line
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []

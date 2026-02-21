@@ -1,5 +1,5 @@
 using System.IO;
-using System.Runtime.InteropServices.ComTypes;
+using TMPro;
 using UnityEngine;
 
 public class MyAnimator : MonoBehaviour
@@ -8,15 +8,49 @@ public class MyAnimator : MonoBehaviour
     private Animator _panel;
     [SerializeField]
     private Animator[] _animators;
+    [SerializeField]
+    private TextMeshProUGUI _TMPro;
+
+    private bool isShowing = true;
+
+    private int GetLines()
+    {
+        _TMPro.ForceMeshUpdate();
+        var lines = _TMPro.textInfo.lineCount;
+        Debug.Log(lines);
+
+
+        if (lines < 1 || lines > 4)
+        {
+            lines = 4;
+        }
+        return lines;
+    }
+
+    public void UpdateLinePositions()
+    {
+        if (isShowing)
+        {
+            var lines = GetLines();
+            foreach (var animator in _animators)
+            {
+                animator.Play($"{lines}-line");
+            }
+        }
+    }
 
     public void Hide()
     {
+        isShowing = false;
         _panel.Play("Hide");
     }
 
-    public void Pop(int lines)
+    public void Pop()
     {
+        isShowing=true;
         _panel.Play("Pop");
+
+        var lines = GetLines();
 
         foreach (var animator in _animators)
         {
@@ -34,7 +68,7 @@ public class MyAnimator : MonoBehaviour
 
                 if (text == "pop")
                 {
-                    Pop(1);
+                    Pop();
                 }
                 else if (text == "hide")
                 {
